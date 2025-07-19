@@ -1,0 +1,2185 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/*/////////////////////////////////////
+WHATSAP ICON CSS
+///////////////////////////////////////*/
+.company-logo-icon-header{
+   width: 130px;
+  height: auto;
+  max-height: 55px;
+  object-fit: contain;
+  
+}
+@media (max-width: 768px) {
+  .company-logo-icon-header {
+    width: 100px;
+    max-height: 35px;
+  }
+}
+
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  animation: pulse 1.5s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-icon {
+  font-family: "Font Awesome 5 Free";
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
+
+
+
+/*//////////////////////
+ NAVBAR CSS 
+///////////////////////*/
+
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: ;
+  background: linear-gradient(to right, #3b2415, #edb842);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  margin-bottom: 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 25px;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 10px;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #010101;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-btn,
+.contact-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn {
+  background-color:;
+  color: black;
+}
+
+.contact-btn {
+  background-color: transparent;
+  border: 1px solid ;
+  color: white;
+}
+
+.contact-btn:hover {
+  background-color:;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    display: none;
+    gap: 0; /* remove extra gap */
+  }
+
+  .nav-links a {
+    margin: 5px 0;
+    padding: 6px 10px;
+    font-size: 15px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-buttons {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 6px;
+  }
+
+  .login-btn,
+  .contact-btn {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+    border-radius: 18px;
+  }
+
+  .nav-toggle:checked + .hamburger + .nav-links {
+    display: flex;
+  }
+}
+
+.mobile-logo-fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.mobile-logo-fixed img {
+  height: 50px;
+  width: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+/*//////////////////////////
+MARQUE LINE CSS
+///////////////////////////*/
+
+.marquee-container {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+}
+
+.marquee-heading {
+  animation: scroll-left 25s linear infinite;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin: 0;
+  display: inline-block;
+  padding: 4px 0; 
+  padding-top: 10px;
+  margin-top: 0;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
+/*/////////////////
+ MAIN CUROSEL CSS 
+/////////////////*/
+
+    body.modal-open {
+      overflow: hidden;
+    }
+
+    #mainCarousel .carousel-item img {
+      object-fit: cover;
+      height: 100vh;
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    #mainCarousel .carousel-item img:hover {
+      transform: scale(1.02);
+      cursor: pointer;
+    }
+
+    .overlay-carousel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+    }
+
+    .carousel-box {
+      width: 95%;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 10px;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .carousel-box img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -12px;
+      right: -12px;
+      font-size: 20px;
+      color: white;
+      background: red;
+      border: none;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 10000;
+    }
+  
+
+@media (max-width: 768px) {
+  #mainCarousel .carousel-item img {
+    height: auto;
+    max-height: 50vh;
+    object-fit: contain; /* show full image without cropping */
+  }
+
+  .carousel-box {
+    max-width: 95%;
+    padding: 5px;
+  }
+
+  .carousel-box img {
+    height: 250px;
+  }
+
+  .close-btn {
+    width: 26px;
+    height: 26px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #mainCarousel .carousel-item img {
+    height: auto;
+    max-height: 40vh;
+    object-fit: contain;
+  }
+
+  .carousel-box img {
+    height: 200px;
+  }
+
+  .close-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/*//////////////////////////
+SERVICES CSS 
+///////////////////////////*/
+
+@media(max-width:768px) {
+    .services-small-container {
+        text-align: center;
+    }
+}
+
+.ourservice-heading {
+    font-family: system-ui;
+    font-size: 25px;
+    font-weight: bold;
+    background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.ourservice-paragraph {
+    font-family: sans-serif;
+    padding-bottom: 12px;
+}
+
+
+@media(min-width:768px) {
+    .ourservice-heading {
+        font-family: system-ui;
+        font-weight: bold;
+        font-size: 40px;
+        background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+    }
+
+    .ourservice-paragraph {
+        font-family: sans-serif;
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 18px;
+        
+    }
+   
+
+}
+
+.services-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750665591/bg_services_xz1rnl.jpg");
+    padding: 10px;
+    background-size: cover;
+
+}
+
+@media (min-width:768px) {
+    .services-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750665591/bg_services_xz1rnl.jpg");
+    padding: 10px;
+    padding-top:40px;
+    background-size: cover;
+    height:80vh;
+
+}
+
+}
+
+.service-icon {
+    height: 155px;
+    width: 170px;
+}
+
+.service-icon {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+
+
+.streetcorner-service-icon {
+    height: 152px;
+    width: 180px;
+}
+
+.streetcorner-service-icon {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.streetcorner-service-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.streetcorner-service-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+.service-paragraph {
+    font-family: Roboto;
+    font-size: 17px;
+}
+
+.styling-menu {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+.button-name {
+    font-family:Roboto;
+    font-weight: bold;
+    font-weight: 900;
+    background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d); 
+}
+@media(max-width768px){
+    .service-icon {
+    height: 155px;
+    width: 185px;
+}
+.streetcorner-service-icon {
+    height: 152px;
+    width: 185px;
+}
+
+}
+
+
+
+
+/*/////////////////////////////
+KNOW US SECTION
+///////////////////////////////*/
+
+.know-us-section {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743510752/YV85MC9hX3ZmbGlw_new_nf5iok.jpg");
+    padding: 20px;
+    background-size: cover;
+    margin-top: 10px;
+}
+
+.know-us-image-icon {
+    height: 170px;
+    width: 260px;
+}
+
+@media(min-width:768px) {
+    .know-us-image-icon {
+        height: 320px;
+        width: 500px;
+
+    }
+}
+
+.knowus-heading {
+    font-family: Lucida Handwriting;
+    font-weight: bold;
+    padding-right: 15px;
+    font-size: 25px;
+}
+
+.knowus-paragraph1 {
+    font-family: roboto;
+    font-weight: bold;
+    padding-right: 26px;
+}
+
+.knowus-paragraph2 {
+    font-family: roboto;
+    padding-right: 15px;
+    padding: 30px;
+}
+
+.more-know-button {
+    font-family: Roboto;
+    border-style: none;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    
+}
+
+.highlight {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 13px;
+}
+@media (max-width:768px) {
+    .highlight {
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 15px;
+}
+    
+}
+
+@media (min-width:768px) {
+    .knowus-heading {
+         font-family: system-ui;
+        font-weight: bold;
+        padding-right: 15px;
+        font-size: 37px;
+    }
+
+    .knowus-paragraph1 {
+        font-family: roboto;
+        font-weight: bold;
+        padding-right: 28px;
+    }
+    .knowus-paragraph2 {
+        font-family: roboto;
+        padding-right: 15px;
+        padding: 30px;
+    }
+
+
+    .display-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px;
+        margin-left: 260px;
+    }
+
+    .highlight {
+        font-family: "Gill Sans", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .more-know-button {
+        font-family: Roboto;
+        border-style: none;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        font-size: 13px;
+        background-color: white;
+        color: black;
+        border: 2px solid black;
+        
+    }
+}
+
+
+
+
+
+/*///////////////////////
+WHY BUZZ GROUPS
+////////////////////////*/
+
+.why-buzz-groups-section {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.why-buzz-groups-section-heaidng {
+     font-family: system-ui;
+    font-weight: bold;
+    font-size: 20px;
+     background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+
+}
+
+@media(min-width:768px) {
+    .why-buzz-groups-section-heaidng {
+        font-family: system-ui;
+        font-weight: bold;
+        margin-left: 20px;
+        margin: 20px;
+        font-size: 37px;
+        background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+
+    }
+}
+
+.small-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743511004/YV85MA_new_2_r3knti.jpg");
+    background-size: cover;
+}
+
+.why-choose-content {
+    font-family: Roboto;
+    font-size: 18px;
+    color: white;
+    padding-left: 35px;
+}
+
+@media (max-width:768px) {
+    .why-choose-content {
+        font-family: Roboto;
+        font-size: 12px;
+        padding-left: 18px;
+    }
+}
+
+.small-cards {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15;
+    margin-bottom: 10px;
+}
+
+.card-heading {
+    font-family: sans-serif;
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-explination {
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+@media (max-width:768px) {
+    .card-explination {
+        font-family: Roboto;
+        font-size: 12px;
+
+    }
+}
+
+.service-logo {
+    height: 75px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*//////////////////////////
+CAREER CSS
+/////////////////////////*/
+
+.internship-big-container {
+    background-color: #ffffff;
+    margin: 25px;
+}
+
+.career-img {
+    height: 150px;
+}
+
+@media(min-width:768px) {
+    .career-img {
+        height: 59vh;
+    }
+}
+
+.career-heading {
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    
+}
+
+.career-paragraph {
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.career-content {
+    margin-top: 10px;
+}
+
+.eligibilty-heading {
+    font-family: Roboto;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.eligibility-paragraph {
+    font-family: Roboto;
+
+}
+
+
+@media(min-width:768px) {
+    .career-content {
+        margin-top: 90px;
+    }
+
+    .career-heading {
+        font-family: system-ui;
+        font-weight: bold;
+        font-size: 35px;
+        text-decoration: underline;
+         background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        margin-top: 100px;
+    }
+
+    .career-paragraph {
+        font-family: Roboto;
+        font-size: 14px;
+       
+    }
+}
+
+.career-small-container {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.career-small-container-heading {
+    font-family: system-ui;
+    text-decoration: underline;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.career-small-container-paragraph {
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+@media(min-width:768px) {
+    .career-small-container-heading {
+        font-family: system-ui;
+        text-decoration: underline;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .career-small-container-paragraph {
+        font-family: Roboto;
+        font-size: 13px;
+        text-align: center;
+        
+    }
+}
+
+.intern-program-heading {
+    text-decoration: underline;
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.intern-program-paragraph {
+    font-family: Roboto;
+    font-size: 13px;
+}
+
+.intern-button {
+  background: linear-gradient(to right, #FFE7CD, #FFD2CD, #F8D4DE, #D2ECFB);
+  border: 2px solid #000; /* Clean black border */
+  border-radius: 6px;     /* Smooth rounded corners */
+  color: #000;            /* Text color - black */
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 6px 12px;      /* Balanced padding */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+
+
+
+
+/* ============================= */
+/*  Partner Program Section CSS  */
+/* ============================= */
+
+.partner-program-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744014525/%E4%B8%8D%E8%A6%8F%E5%89%87%E5%B9%BE%E4%BD%95%E5%BA%95%E7%B4%8B%E8%83%8C%E6%99%AF%E7%B4%A0%E6%9D%90%E5%9C%96%E6%A1%8C%E5%B8%83%E6%89%8B%E6%A9%9F%E6%A1%8C%E5%B8%83%E5%9C%96%E7%89%87%E5%85%8D%E8%B2%BB%E4%B8%8B%E8%BC%89_-_Pngtree_wjcpgc.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Headings & Paragraphs */
+.franchise-enquiry-heaidng {
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.franchise-enquiry-paragraph,
+.franchise-enquiry-paragraph2 {
+    font-family: system-ui;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.franchise-enquiry-paragraph2 {
+    font-style: italic;
+}
+
+/* Image */
+.opportunity-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Optional container spacing */
+.partner-program-content-container {
+    margin-top: 30px;
+}
+
+
+/* ========================= */
+/*  Buzz Mithra Section CSS  */
+/* ========================= */
+
+.buzz-mitra-container {
+    background-color: #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Images */
+.buzz-mitra-img1,
+.buzz-mitra-img2 {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Text styles */
+.Buzz-Mithra-agent-heading {
+    font-family: system-ui;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+.Buzz-Mithra-agent-paragraph {
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #444444;
+}
+
+/* Button */
+.read-more-button {
+    background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 8px 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.read-more-button:hover {
+    transform: scale(1.05);
+}
+
+
+/* ========================== */
+/*  Responsive Media Queries  */
+/* ========================== */
+
+@media (min-width: 768px) {
+    .franchise-enquiry-heaidng {
+        font-size: 32px;
+    }
+
+    .franchise-enquiry-paragraph {
+        font-size: 16px;
+    }
+
+    .franchise-enquiry-paragraph2 {
+        font-size: 16px;
+    }
+
+    .opportunity-img {
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .buzz-mitra-img1,
+    .buzz-mitra-img2 {
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    .Buzz-Mithra-agent-heading {
+        font-size: 20px;
+    }
+
+    .Buzz-Mithra-agent-paragraph {
+        font-size: 16px;
+    }
+
+    .buzz-sathi-container {
+        margin-top: 25px;
+    }
+}
+
+
+
+
+
+/*/////////////////////
+ OUR TEAM CSS 
+/////////////////////*/
+
+.our-team-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743768162/download_20_peirrh.jpg");
+    background-size: cover;
+    padding: 30px;
+     text-align: center; /* Center heading and cards inside container */
+}
+
+.our-team-headding {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 0; /* Remove left padding */
+    text-align: center; /* Center the heading */
+}
+
+
+.our-team-img-cards {
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 10px;
+    margin: 10px auto; /* Center the card horizontally */
+    text-align: center;
+}
+
+.our-team-img {
+    height: 40vh;
+    width: 220px;
+}
+
+@media(min-width:768px) {
+.our-team-headding {
+      font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+}
+
+    .our-team-img-cards {
+        background-color: #ffffff;
+        border-radius: 10px;
+        width: 340px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .our-team-img {
+        height: 70vh;
+        width: 310px;
+    }
+
+}
+@media(min-width:1024px){
+    .our-team-headding {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-left: 20px;
+}
+
+}
+
+.our-team-name {
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.role {
+    font-family: Roboto;
+}
+
+
+
+
+
+/*////////////////////
+FOLLOW US SECTION CSS
+////////////////////*/
+
+.contact-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744359587/Download_premium_image_of_Abstract_silver_metallic_background_design_by_marinemynt_about_backgrounds_design_background_background_abstract_texture_and_plain_background_2353716_jj98o1.jpg");
+    background-size: cover;
+    height: 35vh;
+    padding-top: 35px;
+}
+
+.follow-img-icon {
+    height: 30px;
+    border-radius: 20px;
+}
+
+.icons-container {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.address {
+    font-family: Roboto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.addres-container {
+    text-align: center;
+}
+
+.logo-icon {
+    height: 70px;
+}
+
+@media(min-width:768px) {
+    .contact-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744359587/Download_premium_image_of_Abstract_silver_metallic_background_design_by_marinemynt_about_backgrounds_design_background_background_abstract_texture_and_plain_background_2353716_jj98o1.jpg");
+        background-size: cover;
+        height: 50vh;
+    }
+
+    .our-team-headding {
+        font-family: Copperplate;
+        font-weight: bold;
+        color: white;
+        padding-left: 50px;
+    }
+
+    .follow-img-icon {
+        height: 60px;
+        border-radius: 40px;
+        padding: 10px;
+    }
+
+    .icons-container {
+        text-align: center;
+        padding-top: 10px;
+        padding-left: 40px;
+    }
+
+    .address {
+        font-family: Roboto;
+        text-align: center;
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .logo-icon {
+        height: 100px;
+    }
+}
+
+.role {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.fixed-button-container {
+    background-color: white;
+    position: fixed;
+    bottom: 250px;
+    right: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 170px;
+}
+
+.fixed-button-container img {
+    width: 70px;
+    /* Adjust */
+    height: 70PX;
+    border-radius: 10px;
+    /* Optional rounded look */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 170px;
+}
+
+
+.fixed-button-container:hover {
+    transform: scale(1.05);
+    border-radius: 170px;
+}
+
+@media(min-width:768px) {
+    .fixed-button-container {
+        background-color: white;
+        position: fixed;
+        bottom: 250px;
+        right: 10px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        border-radius: 170px;
+    }
+
+    .fixed-button-container img {
+        width: 100px;
+        /* Adjust */
+        height: 90PX;
+        border-radius: 10px;
+        /* Optional rounded look */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 170px;
+    }
+
+
+    .fixed-button-container:hover {
+        transform: scale(1.05);
+        border-radius: 170px;
+    }
+}
+
+
+
+
+
+
+
+
+/************************* INNER SECTIONS *************************************/
+
+/*/////////////////////
+KNOW US INNER SECTION CSS
+///////////////////////*/
+
+.about-us-background-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744370551/Download_Abstract_background_dark_and_black_overlaps_002_for_free_tg1tok.jpg");
+    background-size: cover;
+    padding: 15px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.aboutus-heaidng {
+    font-family: Roboto;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.aboutus-img-icon {
+    height: 150px;
+    border-radius: 25px;
+}
+
+.know-us-paragraph {
+    font-family: Roboto;
+    color: #ffffff;
+}
+
+.acheivement-img-icon {
+    height: 490px;
+    border-top-left-radius: 25px;
+}
+
+.member-of-femta-heaidng {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.femta-paragraph {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.back-button {
+    border-style: none;
+    background-color: white;
+    font-family: Roboto;
+    font-weight: bold;
+    border-radius: 15px;
+    height: 40px;
+    width: 70px;
+    margin-top: 30px;
+}
+
+@media(max-width:768px) {
+    .aboutus-heaidng {
+        font-family: Roboto;
+        font-weight: bold;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .aboutus-img-icon {
+        height: 150px;
+        border-radius: 25px;
+    }
+
+    .know-us-paragraph {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+    .acheivement-img-icon {
+        height: 300px;
+        border-top-left-radius: 25px;
+    }
+
+    .member-of-femta-heaidng {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+        text-decoration: underline;
+    }
+
+    .femta-paragraph {
+        font-family: Roboto;
+        color: #ffffff;
+        font-size: 10px;
+    }
+
+}
+
+
+
+
+
+/*/////////////////////
+ BUZZ HOLIDAS INNER CSS 
+//////////////////////*/
+
+.buzz-holidays-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 800px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buzz-holidays-container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0.95;
+}
+
+.holidays-images {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.holiday-text-content {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .buzz-holidays-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .holidays-images {
+        width: 100%;
+        height: 200px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .holiday-text-content {
+        width: 100%;
+    }
+}
+
+
+/*holidays section*/
+.buzz-holidays-heading {
+    color: white;
+    font-family: Serif;
+    font-style: italic;
+    font-weight: bold;
+    padding-top: 150px;
+}
+
+.bh-nfo-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750934513/Free_Wallpaper_Tourist_Attractions_Background_Images_Cartoon_Around_The_World_Background_Picture_Photo_Background_PNG_and_Vectors_ei1anu.jpg");
+    background-size: cover;
+    text-align: center;
+    
+}
+
+.bh-info-image {
+    height: 30vh;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 30px;
+}
+.what-buzzholidayz-do-heading{
+    color:black;
+}
+.what-buzzholidayz-do-paragraph{
+ color:black;
+}
+
+@media (min-width:768px) {
+    .bh-nfo-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751010635/Flat_design_travel_background___Free_Vector-Picsart-AiImageEnhancer_ernbsf.png");
+        background-size: cover;
+        text-align: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .bh-info-image {
+        height: 65vh;
+        width:700px;
+        padding-top: 10px;
+        border-top-left-radius: 120px;
+        border-bottom-right-radius: 140px;
+    }
+
+}
+
+
+.big-international-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/a_90/v1746526981/%D0%9E%D0%B1%D0%BE%D0%B8_iOS_iPhone_11_12_13_14_15_16_Pro_Max_buv0g0.jpg");
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.international-destination-heading {
+    font-family: Lucida Handwriting;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+}
+
+.domestic-destination-heading{
+       font-family: Lucida Handwriting;
+        font-size: 35px;
+        color: white;
+        text-align: center;
+    }
+
+.buzz-holidays-trips-container {
+  background-color:white;
+    border-radius: 10px;
+}
+
+.buzz-holidays-trips-container {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.buzz-holidays-trips-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.buzz-holidays-trips-container:hover {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+.holidays-images-icon {
+    height: 190px;
+}
+
+.days-small-conatiner {
+    background-color: #74886b;
+    border-radius: 5px;
+    width: 90px;
+}
+
+.days-paragraph {
+    font-family: Roboto;
+    text-align: center;
+    color: white;
+    padding: 2px;
+    font-size: 10px;
+     background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d); 
+}
+
+.description-holidays {
+    font-family: sans-serif;
+    font-size: 9px;
+}
+
+.destination-heading {
+    font-family: system-ui;
+    font-size: 10px;
+    font-weight:bold;
+}
+
+@media(min-width:768px) {
+    .holidays-images-icon{
+        height: 195px;
+    }
+
+    .description-holidays {
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+
+    .destination-heading {
+        font-family: system-ui;
+        font-size: 15px;
+        font-weight:bold;
+    }
+
+    .international-destination-heading {
+        font-family: Lucida Handwriting;
+        font-size: 35px;
+        color: white;
+        text-align: center;
+    }
+    .domestic-destination-heading{
+       font-family: Lucida Handwriting;
+        font-size: 35px;
+        text-align: center;
+        color:white;
+    }
+}
+
+.big-domestic-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751007128/Above_the_Clouds_y8okct.png");
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+
+
+
+
+/*////////////////////////
+FOREX INNER SECTION CSS 
+////////////////////////*/
+
+.forex-card-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750923728/Money_transfer__Global_Currency._Stock_Exchange_fu31b8.jpg");
+    background-size: cover;
+    padding-bottom: 15px;
+}
+
+.forex-heading {
+    font-family: Georgia, serif;
+    color: white;
+    font-size: 17px;
+    padding-top: 40px;
+    width: 160px;
+    padding-left: 20px;
+}
+
+@media(min-width:768px) {
+    .forex-card-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750923728/Money_transfer__Global_Currency._Stock_Exchange_fu31b8.jpg");
+        background-size: cover;
+        height: 80vh;
+    }
+
+    .forex-heading {
+        font-family: Georgia, serif;
+        color: white;
+        font-size: 40px;
+        padding-top: 160px;
+        width: 450px;
+        padding-left: 30px;
+        text-align: end;
+    }
+
+}
+
+.second-background-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1747037464/Download_premium_vector_of_Futuristic_global_network_technology_vector_by_Kappy_about_background_blue_background_neon_circle_and_technology_background_1055195_ynmlcb.jpg");
+    background-size: cover;
+    padding: 15px;
+}
+
+.buzz-forex-second-bg-container-img {
+    height: 35vh;
+    width: 250px;
+}
+
+@media(min-width:768px) {
+    .buzz-forex-second-bg-container-img {
+        height: 58vh;
+        width: 450px;
+        margin-left: 37px;
+    }
+}
+
+.list-style-type {
+     font-family: 'Open Sans', sans-serif;
+}
+
+.travel-smart-buzz-heading {
+   font-family: 'Bree Serif', serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.travel-smart-img-icon {
+    width: 100%;
+    height: auto;
+}
+
+.travel-smart-img-icon2 {
+    width: 100%;
+    height: auto;
+}
+
+@media(min-width:768px) {
+    .travel-smart-img-icon {
+        height: 30vh;
+    }
+
+    .travel-smart-img-icon2 {
+        height: 33vh;
+    }
+}
+
+.quote-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745132093/Business_background_with_various_money_symbol_Clip_Art_32144423_iweut4.jpg");
+    background-size: cover;
+    height: 40vh;
+    margin-top: 20px;
+}
+
+.quote-heading {
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 60px;
+}
+
+@media (min-width:768px) {
+    .quote-container {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750926143/Untitled_design_42_nujymp.png");
+        background-size: cover;
+        height: 60vh;
+        margin-top: 20px;
+    }
+
+    .quote-heading {
+        font-family: 'Lobster', cursive;
+        font-weight: bold;
+        color: white;
+        font-size: 40px;
+        text-align: center;
+        padding: 60px;
+        padding-top: 230px;
+
+    }
+} 
+
+
+
+/*////////////////////////
+FINSERVE INNER SECTION CSS
+////////////////////////*/
+
+.finserve-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745142604/Premium_Photo___Pen_lying_with_dollars_on_paper_with_printed_word_insurance_twrkxy.jpg");
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 200px 20px;
+}
+
+.second-finserve-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745148952/Premium_Vector___Simple_blue_color_background_vector_for_business_tncl0o.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 15px;
+}
+
+/* Headings & Paragraphs */
+.buzz-finserve-heading {
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #000;
+    padding: 20px 10px 10px;
+    background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.buzz-finserve-paragraph {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #000;
+}
+
+/* Offering Section */
+.offering-heading {
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services-list {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+/* Insurance Content Block */
+.all-insurances-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1745150109/download_28_vz5ynq.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+}
+
+.life-insurance-heading {
+    font-family: system-ui;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 15px;
+     background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+
+}
+
+.life-insurance-paragraph {
+    font-family: "Gill Sans", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Image Styling */
+.service-img {
+    height: auto;
+    width:100%;
+    border-radius: 30px;
+    margin-top: 50px;
+
+}
+
+/* Responsive Overrides for Larger Devices */
+@media(min-width: 768px) {
+    .buzz-finserve-heading {
+        font-size: 35px;
+    }
+
+    .buzz-finserve-paragraph {
+        font-size: 18px;
+    }
+
+    .offering-heading {
+        font-size: 18px;
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .services-list {
+        font-size: 15px;
+        padding-left: 50px;
+    }
+
+    .life-insurance-heading {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+
+    .life-insurance-paragraph {
+        text-align: left;
+        padding-left: 20px;
+        font-size: 15px;
+    }
+
+     .service-img {
+        height: 300px;
+        width:530px;
+        border-radius: 30px;
+        margin-top: 50px;
+    }
+  
+}
+
+
+
+
+
+/*////////////////////////////////
+ ONE MNTH INTERNSHIP APPLY SECTION
+ ////////////////////////////////*/
+
+.apply-bg-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744629496/Blue_Minimalist_Texture_Background_Wallpaper_Image_For_Free_Download_-_Pngtree_mlapqi.jpg");
+    background-size: cover;
+    padding: 50px;
+
+}
+
+.small-bg-apply-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-control-label {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-now-button {
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gender-heading {
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+
+
+
+
+/*/////////////////////////////////////
+BUZZ MITRA READ1 SECTION CSS
+////////////////////////////////////*/
+
+.apply-bg-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744629496/Blue_Minimalist_Texture_Background_Wallpaper_Image_For_Free_Download_-_Pngtree_mlapqi.jpg");
+    background-size: cover;
+    padding: 50px;
+
+}
+
+.small-bg-apply-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-control-label {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-now-button {
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gender-heading {
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+
+
+
+
+/*////////////////////////////
+BUZZ MITRA READ2 SECTION CSS
+///////////////////////////*/
+
+.apply-bg-container {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744629496/Blue_Minimalist_Texture_Background_Wallpaper_Image_For_Free_Download_-_Pngtree_mlapqi.jpg");
+    background-size: cover;
+    padding: 50px;
+
+}
+
+.small-bg-apply-container {
+    background-color: white;
+    padding: 20px;
+}
+
+.form-control-label {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.submit-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.apply-now-button {
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.gender-heading {
+    font-family: Roboto;
+    font-size: 15px;
+}
+
+ .collage-image {
+      width: 100%;
+      max-width: 600px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+    .collage-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  }
+
+
+
+
+
+  /*///////////////////////////////////
+  BUZZ MITRA READ MORE 1 INNER SECTION
+  ///////////////////////////////////*/
+
+  .buzz-mitra-opportunity-background-img {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751627743/Toolbelt_Generation_Finds_Other_Ways_to_Prepare_for_Work_bhiv4i.jpg");
+    background-size: cover;
+    height: 70vh;
+}
+
+@media(min-width:768px) {
+    .buzz-mitra-opportunity-background-img {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751628853/Toolbelt_Generation_Finds_Other_Ways_to_Prepare_for_Work_bhiv4i.jpg");
+        background-size: cover;
+        height: 90vh;
+    }
+
+}
+
+.opp-img-icon {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .opp-img-icon {
+        width: 1600px;
+        height: 300px;
+    }
+}
+
+.opportunity-background-image {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751869040/Abstract_Vector_Background_Squares_Going_In_Perspective_On_Gray_Background_Wallpaper_Background_Abstract_Background_Image_And_Wallpaper_for_Free_Download_hryvqt.jpg");
+    background-size: cover;
+    padding: 10px;
+}
+
+.opportunity-heading {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+    background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buzz-opportunity-paragraph {
+    font-family: Roboto;
+    font-size: 10px;
+}
+
+.buzz-opportunity-small-container {
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.opportunity-img-icon {
+    height: 140px;
+}
+
+
+@media (min-width:768px) {
+    .opportunity-heading {
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 20px;
+        text-decoration: underline;
+        background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .buzz-opportunity-paragraph {
+        font-family: Roboto;
+        font-size: 12px;
+
+    }
+
+    .opportunity-img-icon {
+        height: 160px;
+    }
+
+
+}
+
+.partner-program-requirement-container {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.Partner-Program-Requirements-heading {
+    font-family: Roboto;
+    background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    text-align: center;
+}
+
+.partner-program-requirement-cards {
+    background: linear-gradient(to right,  #f7c35f, #a66f1d); /* Golden gradient */
+    /* background-color: #fef1ab; */
+    margin: 10px;
+    padding: 12px;
+    box-shadow: 3px 3px 5px;
+    text-align: center;
+
+}
+
+.payment-heading {
+    font-family: Roboto;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.payment-paragraph {
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+@media (min-width:768px) {
+    .Partner-Program-Requirements-heading {
+        font-family: Roboto;
+        background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.eligibility-paragraph {
+    font-family: Roboto;
+    text-align: center;
+}
+
+.eligibility-icon {
+    height: 40px;
+}
+
+.investment-small-paragraph {
+    font-family: Roboto;
+}
+
+
+/*////////////////////////////////////////////
+BUZZ MITRA FRANCHISE READ MORE 2 INNER SECTION 
+////////////////////////////////////////////*/
+
+.buzz-mitra-franchise-background-img {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1752041041/From_Overwhelmed_to_Automated__Feeling_bogged_down_by_endless_tasks__Share_Tech_Hub_helps_you_reclaim_your_time_____Missed_Call_Text-Back_jgudjt.jpg");
+    background-size: cover;
+    height: 40vh;
+}
+
+@media(min-width:768px) {
+    .buzz-mitra-franchise-background-img {
+        background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1752041041/From_Overwhelmed_to_Automated__Feeling_bogged_down_by_endless_tasks__Share_Tech_Hub_helps_you_reclaim_your_time_____Missed_Call_Text-Back_jgudjt.jpg");
+        background-size: cover;
+        height: 90vh;
+    }
+
+}
+
+.franchise-opportunity-background-image {
+    background-image: url("https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751869040/Abstract_Vector_Background_Squares_Going_In_Perspective_On_Gray_Background_Wallpaper_Background_Abstract_Background_Image_And_Wallpaper_for_Free_Download_hryvqt.jpg");
+    background-size: cover;
+    padding: 10px;
+}
+
+.franchise-partner-program-requirement-container {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.franchise-Partner-Program-Requirements-heading {
+    font-family: Roboto;
+    background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    text-align: center;
+}
+
+@media (min-width:768px) {
+    .franchise-Partner-Program-Requirements-heading {
+        font-family: Roboto;
+        background: radial-gradient(circle at bottom left, #f7c35f, #a66f1d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 20px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.franchise-eligibility-paragraph {
+    font-family: Roboto;
+    text-align: center;
+}
+
+.franchise-eligibility-icon {
+    height: 40px;
+}
+
+.franchise-investment-small-paragraph {
+    font-family: Roboto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

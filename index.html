@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" /> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> -->
+     
+</head>
+<body>  
+
+<!-- fixed whatsapp button -->
+<a href="https://wa.me/918886008060" class="whatsapp-float" target="_blank" title="Chat with us on WhatsApp">
+  <i class="fab fa-whatsapp whatsapp-icon"></i>
+</a>
+
+
+<div>
+    <!-- Custom Navbar -->
+    <header class="custom-navbar">
+        <div class="nav-inner">   
+            <input type="checkbox" id="nav-toggle" class="nav-toggle"/>
+            <label for="nav-toggle" class="hamburger">&#9776;</label>
+            <nav class="nav-links">
+            <a class="nav-link" href="#homeSection">Home</a>
+            <a class="nav-link" href="#ourServiceSection">Services</a>
+            <a class="nav-link" href="#knowUsSection">Know Us</a>
+            <a class="nav-link" href="#whyBuzzGroupsSection">Why Buzz Groups?</a>
+            <a class="nav-link" href="#careerSection">Careers</a>
+            <a class="nav-link" href="#partnerProgramSection">Partner Program</a>
+            <a class="nav-link" href="#ourteamSection">Our Team</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
+            <a class="nav-link" href="#followUsSection">Follow Us</a>
+            <div class="nav-buttons">
+                <button class="login-btn">Login</button>
+                <button class="contact-btn">Contact</button>
+            </div>
+
+            <div class="d-sm-none d-md-block">     
+            <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1752835706/0654a2c4ddb72401ea6f457be00c5c6c_wz3rhc.png" class="company-logo-icon-header"/>  
+             </div>   
+        </nav>
+        </div>
+
+        <div class="mobile-logo-fixed d-md-none d-sm-block">
+  <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1752835706/0654a2c4ddb72401ea6f457be00c5c6c_wz3rhc.png" alt="Buzz Groups Logo">
+</div>
+    </header>
+
+    <!-- Marquee Section -->
+    <section  class="marquee-container">
+        <h1 class="marquee-heading">
+            BUZZ GROUPS - INFORMATIVE BANKING SERVICES >>> BUZZ GROUPS - INFORMATIVE BANKING SERVICES >>> BUZZ GROUPS - INFORMATIVE BANKING SERVICES >>> BUZZ GROUPS - INFORMATIVE BANKING SERVICES >>> BUZZ GROUPS - INFORMATIVE BANKING SERVICES
+        </h1>
+    </section>
+</div>
+
+
+
+<div id="homeSection">          
+   <!-- Main Carousel -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" id="mainCarouselInner">
+        <div class="carousel-item active" data-group="meeting">
+        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743677338/Corporate_Meeting_Insight_pcjvhm.jpg" class="d-block w-100" />
+        </div>
+        <div class="carousel-item" data-group="poppins">
+        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750421924/poppins_3_e6j2fw.png" class="d-block w-100" />
+        </div>
+        <div class="carousel-item" data-group="img2">
+        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750415030/img2_2_2_yonzmk.png" class="d-block w-100" />
+        </div>
+        <div class="carousel-item" data-group="img4">
+        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750413970/img4_qvoy6e.png" class="d-block w-100" />
+        </div>
+    </div>
+</div>
+
+<script>
+  const relatedImages = {
+    meeting: [
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751526660/download_73_ohepz8.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751526659/Data_science_unlocks_hidden_insights_from_data_empowering_businesses_to_make_smarter_decisions___onwjq8.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751526660/Unlock_the_Power_of_Continuous_Improvement_with_Kaizen___Are_you_ready_to_transform_your_personal_and_professional_life_through_small_incremental_changes__Kai_j3fryc.jpg'
+    ],
+    poppins: [
+         'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751366846/WhatsApp_Image_2025-04-30_at_10.52.52_AM_2_dury6j.jpg',
+        'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751367315/WhatsApp_Image_2025-04-30_at_10.52.52_AM_1_rqq01b.jpg',
+        'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751366850/WhatsApp_Image_2025-04-30_at_10.52.53_AM_xtcgtd.jpg',
+        'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751530772/Untitled_design_47_cq02rr.png'
+    ],
+    img2: [
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751442571/buzzmitra--2_1_ynqkcg.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751442366/buzzmitra---3_1_vn67v9.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751442366/buzzmitra--1_1_tsugoq.jpg'
+      
+    ],
+    img4: [
+        'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751019407/WhatsApp_Image_2025-06-27_at_3.37.25_PM_ymjx9z.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751019129/WhatsApp_Image_2025-06-27_at_3.37.26_PM_sn9qwo.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751020243/WhatsApp_Image_2025-05-01_at_11.29.01_AM_1_soifls.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751020361/WhatsApp_Image_2025-05-01_at_11.29.02_AM_1_rnxqzs.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751020877/WhatsApp_Image_2025-05-01_at_11.29.01_AM_2_qj3hgn.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751020554/WhatsApp_Image_2025-05-01_at_11.29.02_AM_zw845o.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751021366/WhatsApp_Image_2025-05-01_at_1.07.12_PM_aawafo.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751020962/WhatsApp_Image_2025-05-01_at_1.07.13_PM_dnczx0.jpg',
+      'https://res.cloudinary.com/dlcuxbo8m/image/upload/v1751021806/WhatsApp_Image_2025-05-01_at_11.29.01_AM_r2tzuk.jpg'
+
+    ]
+  };
+
+  const mainCarousel = document.getElementById('mainCarousel');
+  const bootstrapCarousel = new bootstrap.Carousel(mainCarousel);
+
+  document.querySelectorAll('#mainCarousel .carousel-item').forEach(item => {
+    const img = item.querySelector('img');
+    img.addEventListener('click', () => {
+      const group = item.dataset.group;
+      const images = relatedImages[group];
+      if (!images || document.querySelector('.overlay-carousel')) return;
+
+      bootstrapCarousel.pause();
+      document.body.classList.add('modal-open');
+
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay-carousel';
+
+      const box = document.createElement('div');
+      box.className = 'carousel-box';
+
+      const closeBtn = document.createElement('button');
+      closeBtn.className = 'close-btn';
+      closeBtn.innerHTML = '×';
+      closeBtn.onclick = () => {
+        overlay.remove();
+        bootstrapCarousel.cycle();
+        document.body.classList.remove('modal-open');
+      };
+
+      const newCarouselId = `relatedCarousel_${group}_${Date.now()}`;
+      const inner = document.createElement('div');
+      inner.className = 'carousel-inner';
+
+      images.forEach((src, i) => {
+        const slide = document.createElement('div');
+        slide.className = 'carousel-item' + (i === 0 ? ' active' : '');
+        slide.innerHTML = `<img src="${src}" alt="Related Image">`;
+        inner.appendChild(slide);
+      });
+
+      const newCarousel = document.createElement('div');
+      newCarousel.className = 'carousel slide';
+      newCarousel.id = newCarouselId;
+      newCarousel.setAttribute('data-bs-ride', 'carousel');
+      newCarousel.appendChild(inner);
+
+      newCarousel.innerHTML += `
+        <button class="carousel-control-prev" type="button" data-bs-target="#${newCarouselId}" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#${newCarouselId}" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      `;
+
+      box.appendChild(closeBtn);
+      box.appendChild(newCarousel);
+      overlay.appendChild(box);
+      document.body.appendChild(overlay);
+
+      new bootstrap.Carousel(document.getElementById(newCarouselId));
+    });
+  });
+</script>
+</div>
+
+
+<div id="ourServiceSection">
+        <div class="services-container shadow mt-3">
+            <div class="services-small-container text-center">
+                <h1 class="ourservice-heading">What We Offer</h1>
+                <p class="ourservice-paragraph">At BUZZ GROUPS we believe travel should be a seamless and exciting experience. Whether you're planning a relaxing vacation or an adventurous
+                    getaway, our comprehensive travel services are designed to meet all your needs. From customized holiday packages <br />
+                    to currency exchange and
+                    flight bookings, we’ve got you covered All services are available at one place to you why the delay.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <a href="holidays.html">   
+                        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750673516/download_68_hw8ffv.jpg" class="service-icon" />
+                        </a>
+                        <div class="dropdown">
+                            <button class=" button-name btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BUZZ HOLIDAYZ
+                            </button>
+                            <div class=" dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item styling-menu" href="#">INTERNATIONAL HOLIDAYS</a>
+                                <a class="dropdown-item styling-menu" href="#">DOMESTIC HOLIDAYS</a>
+                                <a class="dropdown-item styling-menu" href="#">HONEYMOON HOLIDAYS</a>
+                                <a class="dropdown-item styling-menu" href="#">DEVOTIONAL HOLIDAYS</a>
+                                <a class="dropdown-item styling-menu" href="#">CRUSIE HOLIDDAYS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <a href="finserve.html">
+                        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750673172/bf_so2trj.jpg" class="service-icon" />
+                             </a>
+                        <div class="dropdown">
+                            <button class=" button-name btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BUZZ FINSERVE
+                            </button>
+                            <div class=" dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item styling-menu" href="#">TRAVEL INSURANCE</a>
+                                <a class="dropdown-item styling-menu" href="#">MOTOR INSURANCE</a>
+                                <a class="dropdown-item styling-menu" href="#">HEALTH INSURANCE</a>
+                                <a class="dropdown-item styling-menu" href="#">LIFE INSURANCE</a>
+                                <a class="dropdown-item styling-menu" href="#">HOME INSURANCE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                    <a href="forex.html">     
+                        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750673391/forex_wulbi3.jpg" class="service-icon" />
+                        </a>
+                        <div class="dropdown">
+                            <button class="button-name btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                BUZZ FOREX
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item styling-menu" href="#">CURRENCY EXCHANGE</a>
+                                <a class="dropdown-item styling-menu" href="#">MONEY TRANSFER</a>
+                                <a class="dropdown-item styling-menu" href="#">REMITTANCE</a>
+                                <a class="dropdown-item styling-menu" href="#">TRAVEL CARD</a>
+                                <a class="dropdown-item styling-menu" href="#">VISA</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 text-center">
+                        <a href="https://www.streetscorner.in/">     
+                        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750672247/image_for_street_corner_uizzgp.png" class="streetcorner-service-icon" />
+                         </a>
+                        <div class="dropdown">
+                            <button class="button-name btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                STREETS CORNER
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item styling-menu" href="#">DAILY PLAN</a>
+                                <a class="dropdown-item styling-menu" href="#">WEEKLY PLAN</a>
+                                <a class="dropdown-item styling-menu" href="#">MONTHLY PLAN</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<div id="knowUsSection">
+        <div class="know-us-section shadow">
+            <div class="text-center display-section">
+                <div> 
+                    <h1 class="knowus-heading">know Us</h1>
+                    <P class="knowus-paragraph1">Buzz Groups is a group of services provided under one roof. We transform businesses of most major sectors with powerful and adaptable digital solutions that satisfy the needs of today.</P>
+                    
+                  <a href="knowus.html">    
+                   <button class="more-know-button">More Know Us</button>
+                       </a>
+                </div>
+                <div>
+                    <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743497377/Global_Business_People_Digital_Device_Technology_Success_Concept_Stock_Image_-_Image_of_communication_floor__57344243_euusgn.jpg" class="know-us-image-icon" />
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class="knowus-paragraph2">“STK Holidays Pvt Ltd & STK Forex & Leisure Pvt Ltd." as an entity and Trade name to be called as "Buzz Groups" which takes care of any tour and travel requirements, Financial Services authorized from RBI & IRDA for Insurances for Corporate, of its esteemed clients at global level. Since inception from 2008, Buzz Groups has been venturing into new geographic areas and making utmost effort to make the best deal available to its clients.Our story begun in 2012 with INR 25K and only with 3 employees in Anantapur District Andhra Pradesh. With Continuous efforts and loyality towards our costumers we are now rapidly leading in the market with 10+ branches, 50+ employees and 100+ Freelancers and Agents.</p>
+            <div class="highlight-sections text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-3">
+                            <p class="highlight">11+ Years of Experience</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="highlight">1000 Projects completed</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="highlight">12 Awards achievied</p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <p class="highlight">28K Smiles - 24 Nations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+<hr style="border: 1px solid black; width: 100%;">
+
+<div id="whyBuzzGroupsSection">
+        <div class="why-buzz-groups-section">
+            <h1 class="why-buzz-groups-section-heaidng">Why Buzz Groups?</h1>
+            <div class="small-container shadow p-4">
+                <p class="why-choose-content">
+                    Discover unforgettable travel experiences with us! Our expertly curated tours take you beyond the usual, offering hidden gems and local insights. With top-rated service trusted by thousands, we ensure safe and secure journeys backed by 24/7 support. Enjoy the best prices with no hidden fees and flexible booking options for stress-free planning. Whether you seek adventure, culture, or relaxation, we tailor every trip to your needs. Let’s make your next journey extraordinary!
+                    Travel opens the door to unforgettable experiences, and breathtaking landscapes.
+                </p>
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <div class="small-cards shadow p-2 text-center">
+                                <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750739031/Money_free_vector_icons_designed_by_Freepik_n9g932.jpg" class="service-logo" />
+                                <h1 class="card-heading">Cost Savings With Discounts</h1>
+                                <p class="card-explination">Start planning today and make every journey affordable, exciting, and unforgettable</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="small-cards shadow p-2 text-center">
+                                <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750738618/download_69_ljea5h.jpg" class="service-logo" />
+                                <h1 class="card-heading">Time saving</h1>
+                                <p class="card-explination">We value your time as much as you do! spend less time planning and more time exploring.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="small-cards shadow p-2 text-center">
+                                <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750738842/How_to_refund_money_from_Kuku_FM__mytnay.jpg" class="service-logo" />
+                                <h1 class="card-heading">24/7 Customer Support</h1>
+                                <p class="card-explination">Our 24/7 service ensures round-the-clock support. we're here whenever you need us.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="small-cards shadow p-2 text-center">
+                                <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750741407/download_70_nvksoj.jpg" class="service-logo" />
+                                <h1 class="card-heading">Travel Guidance</h1>
+                                <p class="card-explination">For safe and enjoyable travel we will provide, prioritize planning, research, including maintaining good hygiene.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="small-cards small-paragraphl-cards shadow p-2 text-center">
+                                <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750744767/5579459_aytfsn.png" class="service-logo" />
+                                <h1 class="card-heading">Hassle Free</h1>
+                                <p class="card-explination"> We focus on pre-trip planning, including booking in advance, packing essentials, and securing travel insurance.</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="small-cards shadow p-2 text-center">
+                                <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1750743087/download_71_jt7joc.jpg" class="service-logo" />
+                                <h1 class="card-heading">One Stop Shop</h1>
+                                <p class="card-explination">We simplify travel planning by consolidating diverse services like itinerary planning, booking,user-friendly platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<hr style="border: 1px solid black; width: 100%;">
+
+<div id="careerSection">
+        <div class="shadow internship-big-container">
+            <div class="m-4 ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743747311/Businessmen_climb_growth_column_graph__Career_and_personality_development_careerbuilder_career_planning_progress_concept_on_white_background_sx0tqz.jpg" class="career-img" />
+                        </div>
+                        <div class="col-12 col-md-6 career-content">
+                            <h1 class="career-heading">Find Your Dream Jobs Here</h1>
+                            <p class="career-paragraph">
+                                Work with the largest independent professionals and get things done-from quick turnrounds to big transformation.
+                                We are looking for individuals who exhibit high energy, enthusiasm, a passion for problem solving, and the confidence and aptitude to seek continuous improvement. Our people come from diverse backgrounds, experience, and perspectives, which all contribute to our success. Join With us and grow with us!
+                                For more details, share your Resume to hr@buzzgroups.in.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="career-small-container">
+                <h1 class="career-small-container-heading">Internship Programs</h1>
+                <p class="career-small-container-paragraph">Buzz Groups gives students the opportunity for career exploration and development, and to learn new skills while also supporting them financially with an attractive stipend. It offers us the opportunity to bring new ideas and energy into the workplace, develop talent, and potentially build a pipeline for future full-time employees. The internship program can be for a period of one, three, or six months.</p>
+                <div class="container">
+                    <div class="row">
+                        <div class="mt-1 col-6 col-md-4">
+                            <h1 class="intern-program-heading">One Month Program</h1>
+                            <p class="intern-program-paragraph">Stipend: Attractive</p>
+                          <a href="internapply.html">   
+                            <button class="intern-button">APPLY NOW</button>
+                          </a>
+                        </div>
+                        <div class="mt-1 col-6 col-md-4">
+                            <h1 class="intern-program-heading">Three Months Program</h1>
+                            <p class="intern-program-paragraph">Stipend: Attractive</p>
+                             <a href="internapply.html">  
+                            <button class="intern-button">APPLY NOW</button>
+                            </a>
+                        </div>
+                        <div class="mt-1 col-12 col-md-4">
+                            <h1 class="intern-program-heading">Six Months Program</h1>
+                            <p class="intern-program-paragraph">Stipend: Attractive</p>
+                            <a href="internapply.html">  
+                            <button class="intern-button">APPLY NOW</button>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+<div id="partnerProgramSection">
+        <div class="partner-program-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="partner-program-content-container">
+                            <h1 class="franchise-enquiry-heaidng">Franchise Enquiry</h1>
+                            <p class="franchise-enquiry-paragraph">At Buzz Groups, we believe in the power of partnership. Our successful track record and well-established brand make us the ideal choice for entrepreneurs who want to minimize risks and maximize their potential. With our franchise, you’re not just opening a business — you’re joining a community of like-minded individuals who share a passion for success.</p>
+                        </div>
+                    </div>                   
+                    <div class="col-12 col-md-6">
+                        <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744012054/Premium_Vector___Businessman_connecting_franchise_marketing_system_concept_illustration-removebg-preview_wd0vhn.png" class="opportunity-img" />
+                    </div>
+                    <hr style="border: 1px solid black; width: 100%;">
+
+                    <p class="franchise-enquiry-paragraph2">Thank you for your interest in becoming a part of the Buzz Group family! We are thrilled to offer you the opportunity to join our ever-growing network of franchises. As an innovative leader in [industry], we are committed to providing our franchisees with the tools, support, and training they need to succeed.
+                        If you are looking to grow your business, tap into new markets, or be part of an established, trusted brand, Buzz Group is the perfect partner for you.</p>
+                </div>
+            </div>
+
+            <div class="buzz-mitra-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744025422/Team_Collaboration_hfygdc.jpg" class="buzz-mitra-img1" />
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h1 class="Buzz-Mithra-agent-heading">Buzz Mithra-(Freelancer/Agent)</h1>
+                            <p class="Buzz-Mithra-agent-paragraph">Are you an ambitious individual with a passion for connecting people and driving business growth?If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now. If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now. If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now. If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now. If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now.</p>
+                            <a href="buzzmitrareadmore.html">     
+                            <button class="read-more-button">Read More</button>
+                            </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="container buzz-sathi-container mt-4">
+                    <div class="row">
+                          <div class="col-12 col-md-6">
+                            <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744026001/How_to_Invest_with_100__Smart_Tips_for_Beginners_msuzhe.jpg" class="buzz-mitra-img2" />
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <h1 class="Buzz-Mithra-agent-heading">FICO MODEL (Franchise Investment Company Operated)</h1>
+                            <p class="Buzz-Mithra-agent-paragraph">If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now. If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now. If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now. If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now. If you are interested to earn more or you don’t have time to sit in the office, then Buzz Mithra is a great choice to start up now.</p>
+                              <a href="buzzfranchisei.html"> 
+                            <button class="read-more-button">Read More</button>
+                            </a>
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+<div id="ourteamSection">
+        <div class="our-team-container">
+            <h1 class="our-team-headding">OUR TEAM</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-4 mt-2">
+                        <div class="our-team-img-cards">
+                            <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743768503/WhatsApp_Image_2024-12-25_at_12.02.26_PM_1_mxoc77.jpg" class="our-team-img" />
+                            <h1 class="our-team-name">YASHWANTH KRISHNA SANKA</h1>
+                            <p class="role">CEO & FOUNDER</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-2">
+                        <div class="our-team-img-cards">
+                            <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743769666/WhatsApp_Image_2024-12-25_at_12.02.21_PM_oghgtt.jpg" class="our-team-img" />
+                            <h1 class="our-team-name">MOUNIKA KRISHNA SANKA</h1>
+                            <P class="role">CFO & CO-FOUNDER</P>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 mt-2">
+                        <div class=" our-team-img-cards">
+                            <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743769090/WhatsApp_Image_2025-04-04_at_5.44.29_PM_zvyy1q.jpg" class="our-team-img" />
+                            <h1 class="our-team-name">VISHNU VARDHAN REDDY</h1>
+                            <p class="role">DIRECTOR</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+
+<div id="followUsSection">
+        <div class="contact-container">
+            <div class="text-center">
+                <img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1743149772/bglogo-removebg-preview_fmj5c6.png" class="logo-icon" />
+            </div>
+            <div class="icons-container">
+                <a href="https://www.instagram.com/reel/DEXRCApPjXC/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" target="_blank"><img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744281210/Black_Instagram_Icon_mrigfx.jpg" class="follow-img-icon" /></a>
+                <a href="https://www.facebook.com/reel/630032483128401/?app=fbl" target="_blank"><img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744280654/Download_facebook_logo_png_facebook_icon_transparent_png_nm3dln.jpg" class="follow-img-icon" /></a>
+                <a href="https://www.youtube.com/@BuzzGroups-STK" target="_blank"><img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744281098/YOUTUBE_APP_ICON___WHITE_BLACK_YOUTUBE_APP_ICON_ivloj2.jpg" class="follow-img-icon" /></a>
+                <a href="https://whatsapp.com/channel/0029Va6q2GiI7BeLBDFlVS1g" target="_blank"><img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744280533/Download_Phone_icon_vector__Suitable_for_design_element_of_contact_customer_service_and_telephone_call_icon_x5qizp.jpg" class="follow-img-icon" /></a>
+                <a href="https://www.linkedin.com/in/leads-buzz-8aab81309" target="_blank"><img src="https://res.cloudinary.com/dlcuxbo8m/image/upload/v1744283810/THE_NEW_LINKEDIN_ICON_BLACK_PNG_IN_2025_-_eDigital_Agency_yygxqf.jpg" class="follow-img-icon" /></a>
+            </div>
+
+            <div class="addres-container">
+                <p class="address">#6-3-1111/B
+                    Shop No 5 & 6, Ground Floor,
+                    Babukhan Mall, Greenlands Road,
+                    Somajiguda, Hyderabad,
+                    Telangana - 500082<br />
+                    info@buzzgroups.in,
+                    (+91) 888 600 8060</p>
+            </div>
+        </div>
+</div>
+
+
+
+
+
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const navLinks = document.querySelectorAll('.nav-link');
+
+  // Toggle the menu
+  toggleBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+
+  // Close the menu on nav item click
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+    });
+  });
+</script>
+
+
+
+
+
+
+<script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+</body>
+</html>
